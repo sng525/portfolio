@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectTab = ({ name, onClick, isSelected }) => {
   const tabClasses = isSelected
-    ? "text-white border-b border-yellow-600"
+    ? "text-white border-b border-secondary-600"
     : "text-[#ADB7BE] border-slate-700 hover:border-white ";
   return (
     <button

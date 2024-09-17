@@ -1,2 +1,5 @@
 node_modules
-my_profile.jpg
+images
+projects
+.env.local
+.next
