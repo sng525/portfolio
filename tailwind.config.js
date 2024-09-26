@@ -8,6 +8,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      primary:"var(--font-jetBrainsMono)",
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -16,7 +19,7 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.yellow,
+      primary: colors.green,
       secondary: colors.blue,
     },
   },
