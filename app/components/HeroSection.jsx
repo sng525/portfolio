@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { FiDownload } from "react-icons/fi";
 
 const HeroSection = () => {
   return (
@@ -33,14 +34,16 @@ const HeroSection = () => {
             As the left top corner shows, my last name is SONG. 
             I love exploring new things, keeping myselft updated and working on solving problems.
           </p>
-          <div>
+          <div className="flex flex-row items-center">
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 via-secondary-600 to-secondary-500 hover:bg-green-300 text-white">
               Contact Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-secondary-600 to-secondary-500 text-green-700 mt-3">
-              <span className="block bg-[#121212] hover:bg-green-300 rounded-full px-5 py-2">
+            <button className="border w-full sm:w-fit rounded-full text-green-700">
+              <span className="flex items-center w-full sm:w-fit  px-4 py-3 gap-2 rounded-full hover:bg-green-300 ">
                 Download CV
+                <FiDownload className="text-xl"/>
               </span>
+
             </button>
           </div>
         </div>

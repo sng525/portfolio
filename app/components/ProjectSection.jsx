@@ -44,7 +44,7 @@ const ProjectSection = () => {
     project.tag.includes(tab));
 
   return (
-    <>
+    <section id="projects">
       <h2 className="text-white text-4xl font-bold text-center mt-4 mb-4">
         My Projects
       </h2>
@@ -77,7 +77,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
