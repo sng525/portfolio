@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { FiDownload } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (

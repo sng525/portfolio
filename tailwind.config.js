@@ -2,6 +2,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +10,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      primary:"var(--font-jetBrainsMono)",
+      primary: "var(--font-jetBrainsMono)",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px"
     },
     extend: {
       colors: {

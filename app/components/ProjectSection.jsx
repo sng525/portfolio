@@ -10,7 +10,6 @@ const projectsData = [
     description:
       "A .NET MAUI app designed to predict users daily walking steps based on historical data with the help of machine learning.",
     image: "/projects/steps_predictor.jpg",
-    tag: ["All", "C#"],
     gitUrl: "https://github.com/sng525/Steps_Predictor/tree/jiaojiao",
   },
   {
@@ -19,7 +18,6 @@ const projectsData = [
     description:
       "This web app allows users to log in, create a coffee record with a brand, type, rating, comment, and upload pictures.",
     image: "/projects/coffee_sharing.jpg",
-    tag: ["All", "Web App"],
     gitUrl: "https://github.com/sng525/WebApp_Coffee-Sharing_Platform",
   },
   {
@@ -28,27 +26,26 @@ const projectsData = [
     description:
       "The project aims to refactor and clean codes based on design patterns and clean code principles.",
     image: "/projects/clean_code.jpg",
-    tag: ["All", "C#"],
     gitUrl: "https://github.com/sng525/WebShopCleanCode",
   },
 ];
 
 const ProjectSection = () => {
-  const [tab, setTab] = useState("All");
+/*   const [tab, setTab] = useState("All");
 
   const handleTabChange = (newTab) => {
     setTab(newTab);
-  };
+  }; */
 
-  const filterProjects = projectsData.filter((project) => 
-    project.tag.includes(tab));
+  // const filterProjects = projectsData.filter((project) => 
+  //   project.tag.includes(tab));
 
   return (
     <section id="projects">
-      <h2 className="text-white text-4xl font-bold text-center mt-4 mb-4">
+      <h2 className="text-green-700 text-4xl font-bold text-center mt-4 mb-4 gap-2 py-6">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTab
           onClick={handleTabChange}
           name={"All"}
@@ -64,9 +61,9 @@ const ProjectSection = () => {
           name={"Web App"}
           isSelected={tab === "Web App"}
         />
-      </div>
+      </div> */}
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filterProjects.map((project) => (
+        {projectsData.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
