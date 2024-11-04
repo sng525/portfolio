@@ -1,5 +1,5 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
+import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 const ProjectCard = ({ imageUrl, title, description, gitUrl }) => {
@@ -18,8 +18,8 @@ const ProjectCard = ({ imageUrl, title, description, gitUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white mt-3 rounded-b-xl bg-[#A594F9] py-6 px-4">
-        <h5 className="text-xl font-semibodl mb-2">{title}</h5>
+      <div className="text-blate-600 mt-3 rounded-b-xl bg-[#c4b9fd] py-6 px-4">
+        <h5 className="text-xl font-semibodl mb-2 text-center">{title}</h5>
         <p className="text-gray-700 dark:text-gray-300">{description}</p>
       </div>
     </div>

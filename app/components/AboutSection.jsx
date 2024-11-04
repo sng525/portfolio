@@ -10,43 +10,48 @@ const ABOUT_ME_DATA = [
     description: (
       <ul className="space-y-5 w-auto mr-20 py-5">
         <li className="flex items-start space-x-4 bg-[#F9F9FC] rounded-lg shadow-md p-5 hover:bg-slate-200">
-          <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-purple-200 rounded-full">
-            <span className="text-lg font-bold text-purple-700">I</span>
+          <div className="flex-shrink-0 flex items-center justify-center bg-purple-200">
+            <span className="text-lg font-bold text-purple-700 ">
+              2022.08 - 2024.01
+            </span>
           </div>
           <div>
-            <h2 className="text-lg font-semibold text-purple-800">
-              Object-oriented programming with AI-competence
-            </h2>
-            <p className="text-sm text-gray-600">
-              NBI-Handelsakademin, Yrkeshögskolan
-            </p>
-          </div>
+              <h2 className="text-lg font-semibold text-purple-800">
+                Object-oriented programming with AI-competence
+              </h2>
+              <p className="text-sm text-gray-600">
+                NBI-Handelsakademin, Malmö
+              </p>
+              <p className="text-sm text-gray-600">
+                C#, Java, JavaScript, and Python
+              </p>
+            </div>
         </li>
 
         <li className="flex items-start space-x-4 bg-[#F9F9FC] rounded-lg shadow-md p-5 hover:bg-slate-200">
-          <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-200 rounded-full">
-            <span className="text-lg font-bold text-blue-700">II</span>
+          <div className="flex-shrink-0 flex items-center justify-center bg-blue-200">
+            <span className="text-lg font-bold text-blue-700">2017 - 2020</span>
           </div>
           <div>
             <h2 className="text-lg font-semibold text-blue-800">
-              International Relations
+              International Relations, Master
             </h2>
             <p className="text-sm text-gray-600">
-              Beijing Foreign Studies University, Master
+              Beijing Foreign Studies University
             </p>
           </div>
         </li>
 
         <li className="flex items-start space-x-4 bg-[#F9F9FC] rounded-lg shadow-md p-5 hover:bg-slate-200">
-          <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-green-200 rounded-full">
-            <span className="text-lg font-bold text-green-700">III</span>
+          <div className="flex-shrink-0 flex items-center justify-center bg-green-200">
+            <span className="text-lg font-bold text-green-700">2013 - 2017</span>
           </div>
           <div>
             <h2 className="text-lg font-semibold text-green-800">
-              Swedish and Literature
+              Swedish and Literature, Bachelor
             </h2>
             <p className="text-sm text-gray-600">
-              Beijing Foreign Studies University, Bachelor
+              Beijing Foreign Studies University 
             </p>
           </div>
         </li>
@@ -146,9 +151,9 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 ">
       <h2 className="text-[#A594F9] text-4xl md:text-5xl font-bold text-center mb-12">
-        ABOUT ME
+        A GLIMPSE OF MY LIFE JOURNEY
       </h2>
-      <div className="flex flex-col md:flex-row h-[1000px] md:h-[550px] overflow-x-auto overflow-y-hidden border border-neutral-900 ">
+      <div className="flex flex-col md:flex-row h-[1000px] md:h-[550px] overflow-x-auto overflow-y-hidden border border-gray-400 ">
         {ABOUT_ME_DATA.map((section, index) => (
           <motion.div
             key={section.number}
@@ -159,7 +164,7 @@ const AboutSection = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             onClick={() => setActiveStep(index)}
           >
-            <div className="py-5 h-full w-full flex border border-neutral-900">
+            <div className="py-5 h-full w-full flex border border-gray-400">
               <div className="w-16 md:w-24 flex-shrink-0 flex flex-col justify-between text-center ">
                 <span className="text-2xl font-bold">{section.number}</span>
                 <span className="writing-vertical-lr text-sm font-semibold transform ">
